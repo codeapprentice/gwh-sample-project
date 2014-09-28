@@ -27,11 +27,13 @@
             
         var a = $('<a>')
                 .attr('class','pull-right')
-                
+                .css({
+                    color: 'red'
+                })
                 .click(function(){
                     $('#my-popup').remove();
                 })
-                .html('&times;');
+                .html("<span class='glyphicon glyphicon-remove'></span>");
         
         popup.append(a);
         
