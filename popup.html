@@ -12,7 +12,8 @@
     
     function OpenPopup()
     {
-        window.open('_blank');
+       var popup = $('<DIV>')
+            .attr('id','my-popup');
     }
     
     window.addEventListener('load',function(){				
