@@ -7,3 +7,7 @@
  #btn-open:hover {
      border:2px solid blue;
  }
+ #my-popup {
+     border: 5px solid #dddddd;
+     z-index: 999999;
+ }
