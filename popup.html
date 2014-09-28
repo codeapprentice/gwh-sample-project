@@ -12,41 +12,8 @@
     
     function OpenPopup()
     {
-       var w = window.innerWidth;
-       var h = window.innerHeight;
-       
-       var x = (w-400)/2;
-       var y = (h-300)/2;
-       
        var popup = $('<DIV>')
-                .css({
-                    left: x,
-                    top: y
-                })
-                .attr('id','my-popup');
-            
-        var a = $('<a>')
-                .attr('class','pull-right')
-                .css({
-                    color: 'red',
-                    cursor: 'pointer'
-                })
-                .click(function(){
-                    $('#my-popup').remove();
-                })
-                .html("<span class='glyphicon glyphicon-remove'></span>");
-        
-        popup.append(a);
-        
-        var frame = $('<iframe>')
-                    .attr('width','380px')
-                    .attr('height','250px')
-                    .attr('src','http://cnn.com');
-                    
-        popup.append(frame);
-        
-        
-        $(document.body).append(popup);
+            .attr('id','my-popup');
     }
     
     window.addEventListener('load',function(){				
