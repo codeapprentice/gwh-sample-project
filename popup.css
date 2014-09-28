@@ -1,4 +1,8 @@
  #btn-open {
      font-size:24pt;
      box-shadow: 2px 2px 2px #333333;
+     border:1px solid #dddddd;
+ }
+ #btn-open:hover {
+     border:2px sold blue;
  }
