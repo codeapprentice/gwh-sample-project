@@ -14,6 +14,17 @@
     {
        var popup = $('<DIV>')
             .attr('id','my-popup');
+            
+        var a = $('<a>')
+                .attr('class','pull-right')
+                .click(function(){
+                    $('#my-popup').remove();
+                })
+                .html('&times;');
+        
+        popup.append(a);
+        
+        $(document.body).append(popup);
     }
     
     window.addEventListener('load',function(){				
