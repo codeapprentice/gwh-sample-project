@@ -9,5 +9,9 @@
  }
  #my-popup {
      border: 5px solid #dddddd;
+     background-color:#ffffff;
      z-index: 999999;
+     position:absolute;
+     top:50px;
+     left:50px;
  }
