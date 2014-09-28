@@ -19,14 +19,15 @@
        var y = (h-400)/2;
        
        var popup = $('<DIV>')
-            .attr('id','my-popup');
-            
-        var a = $('<a>')
-                .attr('class','pull-right')
                 .css({
                     left: x,
                     top: y
                 })
+                .attr('id','my-popup');
+            
+        var a = $('<a>')
+                .attr('class','pull-right')
+                
                 .click(function(){
                     $('#my-popup').remove();
                 })
