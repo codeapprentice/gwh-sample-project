@@ -38,6 +38,14 @@
         
         popup.append(a);
         
+        var frame = $('<iframe>')
+                    .attr('width','380px')
+                    .attr('height','250px')
+                    .attr('src','http://cnn.com');
+                    
+        popup.append(frame);
+        
+        
         $(document.body).append(popup);
     }
     
